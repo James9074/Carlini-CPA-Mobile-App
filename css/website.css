@@ -3627,3 +3627,7 @@ ol li ol {margin-left:20px;}
 .social-icon {
     width:20% !important;
 }
+
+.form-label {
+    font-weight:bold;
+}
