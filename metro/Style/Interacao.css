@@ -1,0 +1,32 @@
+body
+{
+    margin:0px;
+	font-family:Verdana, Tahoma;
+}
+
+.clear { clear:both; }
+.center { text-align:center;}
+
+.cabecalho {
+    background:url('Imagem/fundologo.png') repeat-x #00A4CC;
+    padding-left:50px;
+}
+
+.list ul{
+    list-style-type: none;
+    padding:0px;
+}
+.list li{
+    padding-bottom:10px;
+}
+.list p {
+
+    }
+
+
+.regular{font-family: Lato, Arial, Helvetica, sans-serif;font-size: 13px;}
+.regular div p{font-size: 13px;color: rgb(76, 76, 76);vertical-align: baseline;line-height: 20.7999992370605px;}
+.regular div h3{font-size: 17px;color: rgb(76, 76, 76);}
+
+
+
