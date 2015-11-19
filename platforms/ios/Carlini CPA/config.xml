@@ -14,16 +14,15 @@
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
+    <feature name="SplashScreen">
+        <param name="ios-package" value="CDVSplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
     <feature name="StatusBar">
         <param name="ios-package" value="CDVStatusBar" />
         <param name="onload" value="true" />
     </feature>
     <preference name="StatusBarOverlaysWebView" value="true" />
-    <preference name="StatusBarStyle" value="lightcontent" />
-    <feature name="SplashScreen">
-        <param name="ios-package" value="CDVSplashScreen" />
-        <param name="onload" value="true" />
-    </feature>
     <allow-intent href="itms:*" />
     <allow-intent href="itms-apps:*" />
     <name>Carlini CPA</name>
@@ -38,6 +37,8 @@
     <preference name="prerendered-icon" value="true" />
     <preference name="stay-in-webview" value="false" />
     <preference name="ios-statusbarstyle" value="white-opaque" />
+    <preference name="StatusBarStyle" value="lightcontent" />
+    <preference name="StatusBarBackgroundColor" value="#FFFFFF" />
     <preference name="detect-data-types" value="true" />
     <preference name="exit-on-suspend" value="false" />
     <preference name="show-splash-screen-spinner" value="true" />
