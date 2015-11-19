@@ -1,0 +1,16 @@
+.amounts {
+    text-align: center;
+}
+.amounts label {
+    display: inline-block;
+    min-width: 150px;
+}
+
+.totals {
+    color: #080;
+}
+
+.ui-header h1{
+    font-size: 1.3em !important;
+    font-weight:bold !important;
+}
