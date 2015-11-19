@@ -1,0 +1,19 @@
+2015-11-19 18:24:50.706 Carlini CPA[9994:300949] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/james/Library/Developer/CoreSimulator/Devices/F9BE4857-BE05-4023-A96E-515353AB7B11/data/Containers/Data/Application/FF21B682-19F5-408E-9783-0F2389C5ABB1/Library/Cookies/com.rotarydesign.carlinicpa.binarycookies
+2015-11-19 18:24:51.056 Carlini CPA[9994:300949] Apache Cordova native platform version 3.9.1 is starting.
+2015-11-19 18:24:51.056 Carlini CPA[9994:300949] Multi-tasking -> Device: YES, App: YES
+2015-11-19 18:24:51.079 Carlini CPA[9994:300949] Unlimited access to network resources
+2015-11-19 18:24:51.098 Carlini CPA[9994:300949] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-11-19 18:24:51.986 Carlini CPA[9994:300949] [CDVTimer][statusbar] 490.881026ms
+2015-11-19 18:24:52.047 Carlini CPA[9994:300949] [CDVTimer][splashscreen] 60.710967ms
+2015-11-19 18:24:52.047 Carlini CPA[9994:300949] [CDVTimer][TotalPluginStartup] 552.010000ms
+2015-11-19 18:24:52.152 Carlini CPA[9994:300949] Resetting plugins due to page load.
+2015-11-19 18:24:53.668 Carlini CPA[9994:300949] Finished load of: file:///Users/james/Library/Developer/CoreSimulator/Devices/F9BE4857-BE05-4023-A96E-515353AB7B11/data/Containers/Bundle/Application/1F90D16D-17A9-40FC-8335-B83C5E179CBB/Carlini%20CPA.app/www/index.html
+2015-11-19 18:24:56.216 Carlini CPA[9994:300949] Resetting plugins due to page load.
+2015-11-19 18:24:58.746 Carlini CPA[9994:300949] Finished load of: https://www.google.com/maps/place/3804+Meeting+St,+Indian+Trail,+NC+28079/@35.0849812,-80.6349646,17z/data=!4m2!3m1!1s0x885424ccfb46dac7:0xa9d549d13db46970

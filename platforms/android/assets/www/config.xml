@@ -21,6 +21,7 @@
     <preference name="android-installLocation" value="auto" />
     <preference name="AutoHideSplashScreen" value="true" />
     <preference name="SplashScreenDelay" value="0" />
+
     <gap:plugin name="org.apache.cordova.battery-status" />
     <gap:plugin name="org.apache.cordova.camera" />
     <gap:plugin name="org.apache.cordova.media-capture" />
@@ -40,7 +41,7 @@
     <gap:plugin name="org.apache.cordova.splashscreen" />
     <gap:plugin name="org.apache.cordova.vibration" />
     <gap:plugin name="com.phonegap.plugin.statusbar" version="1.0.1" />
-    
+
     <icon src="icon.png" />
     <icon gap:platform="android" gap:qualifier="ldpi" src="www/res/icon/android/icon-36-ldpi.png" />
     <icon gap:platform="android" gap:qualifier="mdpi" src="www/res/icon/android/icon-48-mdpi.png" />
@@ -88,9 +89,9 @@
     <icon src="icons/ios/Icon-Small-50@2x.png" gap:platform="ios" width="100" height="100" />
 
 
-
-
-
+    
+    
+    
     <!-- SPLASH -->
 
     <!-- iPhone and iPod touch -->
