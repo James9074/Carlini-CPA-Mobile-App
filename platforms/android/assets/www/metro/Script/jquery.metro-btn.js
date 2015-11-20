@@ -16,7 +16,7 @@
        // }
         html_code += " class='metro-btn metro metrosingle " + theme + "'>\r\n";
         if(isExternal == true)
-            html_code += "\t<a href='' onclick='openLink(\""+page+"\");'><div id='metroLink"+page+"' class='imgsimple'><img src='" + imagem + "' alt='" + texto + "' /></div>\r\n";
+            html_code += "\t<a href='"+page+"'><div id='metroLink"+page+"' class='imgsimple'><img src='" + imagem + "' alt='" + texto + "' /></div>\r\n";
         else
             html_code += "\t<a href='#"+page+"'><div id='metroLink"+page+"' class='imgsimple'><img src='" + imagem + "' alt='" + texto + "' /></div>\r\n";
         html_code += "\t<span>" + texto + "</span>\r\n";

@@ -17,22 +17,16 @@
     <script src="metro/Script/jquery.metro-btn.js" type="text/javascript"></script>
 
 
-    <script type="text/javascript">
-        window.onerror = function(message, url, lineNumber) {
-            console.log("Error: "+message+" in "+url+" at line "+lineNumber);
-        }
-    </script>
-
 
     <script type="text/javascript">
         $(document).ready(function () {
-            $("#nav-panel").AddMetroSimpleButton('bt1', 'metro-vermelho', 'metro/Style/Imagem/contact.png', 'Contact', 'contactPage');
-            $("#nav-panel-2").AddMetroSimpleButton('bt2', 'metro-vermelho', 'metro/Style/Imagem/marker.png', 'Location', 'http://maps.apple.com/?q=3804+Meeting+Street+indian+trail+nc', true);
+            $("#nav-panel").AddMetroSimpleButton('bt3', 'metro-vermelho', 'metro/Style/Imagem/contact.png', 'Contact', 'contactPage');
+            $("#nav-panel-2").AddMetroSimpleButton('bt3', 'metro-vermelho', 'metro/Style/Imagem/marker.png', 'Location', 'http://maps.apple.com/?q=35.0850099,-80.634675', true);
             $("#nav-panel").AddMetroSimpleButton('bt3', 'metro-vermelho', 'metro/Style/Imagem/services.png', 'Services', 'servicesPage');
 
             //$("#nav-panel-2").AddMetroSimpleButton('bt1', 'metro-vermelho', 'metro/Style/Imagem/resources.png', 'Resources', 'resourcesPage');
             //$("#nav-panel-2").AddMetroSimpleButton('bt2', 'metro-vermelho', 'metro/Style/Imagem/news.png', 'News', 'newsPage');
-            $("#nav-panel-2").AddMetroSimpleButton('bt4', 'metro-vermelho', 'metro/Style/Imagem/about.png', 'About', 'aboutPage');
+            $("#nav-panel-2").AddMetroSimpleButton('bt1', 'metro-vermelho', 'metro/Style/Imagem/about.png', 'About', 'aboutPage');
 
         });
     </script>
@@ -42,7 +36,7 @@
     <div data-role="page" class="" id="mainPage">
 
         <div style="margin-top:10px;text-align:center;font-family: Cardo, Georgia, serif;font-size: 17px;">
-            <img class="logo" src="img/logo.png"/>
+            <img id="logo" src="img/logo.png"/>
         </div>
         <div data-role="content" class="">
             <p style="text-align:center;font-family: Cardo, Georgia, serif;font-size: 17px;">
@@ -67,7 +61,7 @@
                     <strong>Christine A. Carlini<br/> CPA, CGMA</strong><br>
                     Phone: 704.221.7475<br>
                 </p><div class="mail">
-                <a onclick="openLink('mailto:christine@carlinicpa.com');" href="" hidefocus="true" style="outline: none;">christine@carlinicpa.com</a>
+                <a href="mailto:christine@carlinicpa.com" hidefocus="true" style="outline: none;">christine@carlinicpa.com</a>
                 </div>
                     </div>
 
@@ -76,7 +70,7 @@
                             <strong>Jeff M. Carlini<br/> CPA, CFE</strong><br>
                             Phone: 704.604.2101<br>
                         </p><div class="mail">
-                        <a onclick="openLink('mailto:jeff@carlinicpa.com');" href="" hidefocus="true" style="outline: none;">jeff@carlinicpa.com</a>
+                        <a href="mailto:jeff@carlinicpa.com" hidefocus="true" style="outline: none;">jeff@carlinicpa.com</a>
                     </div>
                         <p></p>
                     </div>
@@ -93,7 +87,7 @@
     <div data-role="page" class="" id="resourcesPage" data-add-back-btn="true" >
 
         <div style="margin-top:10px;text-align:center;font-family: Cardo, Georgia, serif;font-size: 17px;">
-            <img class="logo" src="img/logo.png"/>
+            <img id="logo" src="img/logo.png"/>
         </div>
         <div data-role="content" class="">
 
@@ -141,18 +135,19 @@
 
     <div data-role="page" class="" id="contactPage" data-add-back-btn="true" >
         <div data-role="header" class="" >
-            <a href="#mainPage" class="">Back</a>
+            <a href="#mainPage" class="" data-rel="back">Back</a>
             <h1>Contact</h1>
         </div>
         <div data-role="content" class="">
             <div style="margin-top:10px;text-align:center;font-family: Cardo, Georgia, serif;font-size: 17px;">
-                <img class="logo" src="img/logo.png"/>
+                <img id="logo" src="img/logo.png"/>
             </div>
             <br/>
 
             <hr/>
+            <!-- <a href="http://maps.apple.com/?q=35.0850099,-80.634675"> </a>-->
             <div id="text-text-12" class="widget-container widget_text"  style="">
-                <div class="textwidget" style="float:left;margin-right:15px;width: 43%;">
+                <div class="textwidget" style="float:left;margin-right:15px;width: 42%;">
                     <p><br/>
                         <strong>Christine A. Carlini</strong><br>
                         <strong>CPA, CGMA</strong>
@@ -161,12 +156,12 @@
 
                     </p>
                 </div>
-                <div  style="float:right;width: 51%;margin-top:8px;">
+                <div  style="float:right;width: 45%;margin-top:8px;">
                     <p>
 
-                        Phone: <a onclick="openLink('tel:7042217475');" href="">704.221.7475</a><br>
+                        Phone: <a href="tel:7042217475">704.221.7475</a><br>
                         Fax: 704.705.2403<br>
-                        <a onclick="openLink('mailto:christine@carlinicpa.com');" href="" hidefocus="true" style="outline: none;">christine@carlinicpa.com</a>
+                        <a href="mailto:christine@carlinicpa.com" hidefocus="true" style="outline: none;">christine@carlinicpa.com</a>
 
 
                     </p>
@@ -184,9 +179,9 @@
                 <div  style="float:right;width: 51%;margin-top:8px;">
                     <p>
 
-                        Phone: <a onclick="openLink('tel:7046042101');" href="">704.604.2101</a><br>
+                        Phone: <a href="tel:7046042101">704.604.2101</a><br>
                         Fax: 704.705.2403<br>
-                        <a onclick="openLink('mailto:jeff@carlinicpa.com');" href="" hidefocus="true" style="outline: none;">jeff@carlinicpa.com</a>
+                        <a href="mailto:jeff@carlinicpa.com" hidefocus="true" style="outline: none;">jeff@carlinicpa.com</a>
 
 
                     </p>
@@ -194,9 +189,9 @@
                 <div style="clear:both;margin-bottom:10px"></div>
             </div>
 <hr/>
-            <div class="widget-container widget_contact first" ><div class="inner"><div id="contact-address" class="contact-address"><h3 class="widget-title">Find us at:</h3><div class="name"><strong>Carlini CPA, PLLC</strong></div><div class="address">3804 Meeting Street<br/>Indian Trail<br/>North Carolina 28079</div>
+            <div class="widget-container widget_contact first" ><div class="inner"><div id="contact-address" class="contact-address"><h3 class="widget-title">Find us at:</h3><div class="name"><strong>Carlini CPA, PLLC</strong></div><div class="address">6132 Creft Circle<br/>Indian Trail,<br/>North Carolina 28079</div>
 
-                <div class="address"><a onclick="openLink('http://www.carlinicpa.com');" href="">www.carlinicpa.com</a></div></div>
+                <div class="address"><a href="http://www.carlinicpa.com">www.carlinicpa.com</a></div></div>
 
                 <img style="margin-right:20px;width:40%;height:auto;float: right;" src="img/town.png"/>
 
@@ -204,7 +199,7 @@
             <div style="clear:both"></div>
             <hr/>
 
-    <!--<div data-role="content" style="margin-top: -30px;" class="regular">
+    <div data-role="content" style="margin-top: -30px;" class="regular">
         <div class="regular" data-role="collapsibleset" data-theme="a" data-content-theme="a">
                 <div data-role="collapsible">
                     <h3>Contact Form</h3>
@@ -212,7 +207,7 @@
                 <form method="post" action="//formspree.io/james9074@gmail.com">
                     <span class="form-label">Your Name</span><input type="text" name="name">
                     <span class="form-label">Your Email</span><input type="text" name="_replyto">
-                    <span class="form-label">Comments</span><input type="text" name="name">
+                    <!--<span class="form-label">Comments</span><input type="text" name="name">-->
                     <span class="form-label">Service Type Needed</span>
                     <select>
                         <option >Tax Preperation</option>
@@ -232,28 +227,26 @@
         </div>
             </div>
 
-            <hr/>-->
+            <hr/>
 <div class="contact-social">
-    <div class="social-icon"><strong>Follow:</strong> <br> <a onclick="openLink('https://twitter.com/CarliniCPA');" href="" target="_blank" hidefocus="true" style="outline: none;"><img src="img/btn_twitter.png" alt=""></a>
+    <div class="social-icon"><strong>Follow us:</strong> <br> <a href="https://twitter.com/CarliniCPA" target="_blank" hidefocus="true" style="outline: none;"><img src="img/btn_twitter.png" alt=""></a>
     </div>
 
-    <div class="social-icon"><strong>Join:</strong> <br> <a onclick="openLink('https://www.facebook.com/CarliniCPA');" href="" target="_blank" hidefocus="true" style="outline: none;"><img src="img/btn_facebook.png" alt=""></a>
+    <div class="social-icon"><strong>Join us:</strong> <br> <a href="https://www.facebook.com/CarliniCPA" target="_blank" hidefocus="true" style="outline: none;"><img src="img/btn_facebook.png" alt=""></a>
     </div>
 
-    <div class="social-icon"><strong>Add:</strong> <br> <a onclick="openLink('https://www.linkedin.com/company/carlini-cpa');" href="" target="_blank" hidefocus="true" style="outline: none;"><img src="img/btn_linkedin.png" alt=""></a>
+    <div class="social-icon"><strong>Add us:</strong> <br> <a href="https://www.linkedin.com/company/carlini-cpa" target="_blank" hidefocus="true" style="outline: none;"><img src="img/btn_linkedin.png" alt=""></a>
     </div>
 
-    <div class="social-icon"><strong>Join:</strong> <br> <a onclick="openLink('https://plus.google.com/+Carlinicpa');" href="" target="_blank" hidefocus="true" style="outline: none;"><img src="img/btn_googleplus.png" alt=""></a>
+    <div class="social-icon"><strong>Join us:</strong> <br> <a href="https://plus.google.com/+Carlinicpa" target="_blank" hidefocus="true" style="outline: none;"><img src="img/btn_googleplus.png" alt=""></a>
     </div>
     <div class="clear"></div>
 </div>
 
             <hr/>
 
-            <div style="text-align:center;margin:0;">
-                <!--<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3264.868834620759!2d-80.634675!3d35.0850099!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885424cd1a945547%3A0xe5807f64341fa34a!2s3804+Meeting+Street%2C+Lake+Park%2C+NC+28079!5e0!3m2!1sen!2sus!4v1430566777642" width="290" height="300" frameborder="0" style="border:0;width:100%;"></iframe>
-            -->
-                <a onclick="openLink('http://maps.apple.com/?q=3804+Meeting+Street+indian+trail+nc')" href=""><img src="img/map.jpg"></a>
+            <div style="text-align:center;margin:none;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3264.868834620759!2d-80.634675!3d35.0850099!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885424cd1a945547%3A0xe5807f64341fa34a!2s6132+Creft+Cir%2C+Lake+Park%2C+NC+28079!5e0!3m2!1sen!2sus!4v1430566777642" width="290" height="300" frameborder="0" style="border:0;width:100%;"></iframe>
             </div>
             <!--<p class="regular">
                         <h3>Our Office</h3>
@@ -278,11 +271,11 @@
 
 <div data-role="page" class="" id="servicesPage" data-add-back-btn="true" >
     <div data-role="header" class="" >
-        <a href="#mainPage" class="">Back</a>
+        <a href="#mainPage" class="" data-rel="back">Back</a>
         <h1>Services</h1>
     </div>
     <div style="margin-top:10px;text-align:center;font-family: Cardo, Georgia, serif;font-size: 17px;">
-        <img class="logo" src="img/logo.png"/>
+        <img id="logo" src="img/logo.png"/>
     </div>
 
     <div class="cabecalho">
@@ -327,19 +320,19 @@
             </p>
                 </div>
                 <div data-role="collapsible">
-            <h3>Payroll</h3>
+            <h3 id="">Payroll</h3>
             <p>
                 At Carlini CPA we offer an entire suite of payroll services. We have e-file capabilities to e-file state and federal monthly, quarterly, and annual payroll reports. Let us save you time and hassle by preparing your required payroll filings.
             </p>
                 </div>
                 <div data-role="collapsible">
-            <h3>IRS Resolution</h3>
+            <h3 id="">IRS Resolution</h3>
             <p>
                 As Certified Public Accountants, we can represent you before the IRS. Dealing with the IRS on either a personal or business level can be intimidating and stressful. If you have received a tax notice, bring it to us and let us devise a plan and strategy for resolution.
             </p>
                 </div>
                 <div data-role="collapsible">
-            <h3>Management Services</h3>
+            <h3 id="">Management Services</h3>
             <p>
                 Are you getting the most from your supply chain? We can perform a review of your high dollar supplier purchases to determine if savings can be realized. We have extensive experience dealing with multi-million dollar international companies and procurement contracts.
             </p>
@@ -367,12 +360,12 @@
 
 <div data-role="page" class="" id="aboutPage" data-add-back-btn="true">
     <div data-role="header" class="" >
-        <a href="#mainPage" class="">Back</a>
+        <a href="#mainPage" class="" data-rel="back">Back</a>
         <h1>About</h1>
     </div>
     <div data-role="content" class="">
         <div style="margin-top:10px;text-align:center;font-family: Cardo, Georgia, serif;font-size: 17px;">
-            <img class="logo" src="img/logo.png"/>
+            <img id="logo" src="img/logo.png"/>
         </div>
         <br/>
         <div class="header_quote" style="font-size: 18px;">
@@ -395,10 +388,9 @@
         <div style="clear:both;"></div>
         <hr/>
         <div id="text-text-14" class="widget-container widget_text ">
-            <h3 style="color:darkred" class="widget-title">Decades of Experience</h3>
+            <a href="tel:7046042101"><h3 style="color:darkred" class="widget-title">Give Us a Call</h3></a>
                 <div class="textwidget">
-                Carlini CPA encourages you to seek our advice if your financial situation changes during the course of the year.  We have been working with clients for decades to
-                    find the best solutions to a wide array of accounting needs. Sometimes a quick phone call can avoid an unexpected surprise later.
+                Carlini CPA encourages you to seek our advice if your financial situation changes during the course of the year.  Sometimes a quick phone call can avoid an unexpected surprise later.
                 </div>
             </div>
         <!--<div class="styled_table styled_table table_red" style="padding-top:0px;">
@@ -445,13 +437,10 @@
             </table>
         </div>-->
     </div>
-</div>
 
-<script>
-    function openLink(aLink){
-        window.open(aLink, '_system');
-    }
-</script>
+
+
+
 
 
 <script type="text/javascript" src="cordova.js"></script>
